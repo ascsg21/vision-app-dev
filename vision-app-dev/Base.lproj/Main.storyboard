@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,34 +50,36 @@
                                             <constraint firstAttribute="trailing" secondItem="T6V-2I-gpZ" secondAttribute="trailing" constant="8" id="YZj-Lr-jZN"/>
                                         </constraints>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-bz-tLW" customClass="RoundedShadowImageView" customModule="vision_app_dev" customModuleProvider="target">
+                                        <rect key="frame" x="280" y="519" width="75" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="1F9-BQ-Pzl"/>
+                                            <constraint firstAttribute="width" constant="75" id="gvq-eB-qyk"/>
+                                            <constraint firstAttribute="height" constant="128" id="iwV-iL-onN"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7g6-ri-uiK" customClass="RoundedShadowButton" customModule="vision_app_dev" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="615" width="85" height="32"/>
+                                        <rect key="frame" x="8" y="615" width="100" height="32"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="v5o-Ap-KnF"/>
+                                            <constraint firstAttribute="height" constant="32" id="fpU-Jo-lFV"/>
+                                            <constraint firstAttribute="width" constant="100" id="v5o-Ap-KnF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                                         <state key="normal" title="FLASH OFF">
                                             <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-bz-tLW" customClass="RoundedShadowImageView" customModule="vision_app_dev" customModuleProvider="target">
-                                        <rect key="frame" x="280" y="519" width="75" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="gvq-eB-qyk"/>
-                                            <constraint firstAttribute="height" constant="128" id="iwV-iL-onN"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="7g6-ri-uiK" secondAttribute="bottom" constant="20" id="1RI-gQ-kys"/>
-                                    <constraint firstAttribute="trailing" secondItem="QpQ-ue-82M" secondAttribute="trailing" constant="20" id="QGa-Uw-QRK"/>
-                                    <constraint firstItem="QpQ-ue-82M" firstAttribute="top" secondItem="xo4-8A-Ejs" secondAttribute="top" constant="30" id="dYZ-r4-c0g"/>
-                                    <constraint firstAttribute="bottom" secondItem="oO5-bz-tLW" secondAttribute="bottom" constant="20" id="gfO-JI-UqB"/>
-                                    <constraint firstItem="7g6-ri-uiK" firstAttribute="leading" secondItem="xo4-8A-Ejs" secondAttribute="leading" constant="20" id="ijq-Ba-XCp"/>
-                                    <constraint firstItem="QpQ-ue-82M" firstAttribute="leading" secondItem="xo4-8A-Ejs" secondAttribute="leading" constant="20" id="jcY-N4-VYN"/>
-                                    <constraint firstAttribute="trailing" secondItem="oO5-bz-tLW" secondAttribute="trailing" constant="20" id="tmJ-Z2-V7I"/>
+                                    <constraint firstAttribute="bottom" secondItem="7g6-ri-uiK" secondAttribute="bottom" constant="20" id="0jx-6J-wXG"/>
+                                    <constraint firstItem="QpQ-ue-82M" firstAttribute="leading" secondItem="xo4-8A-Ejs" secondAttribute="leading" constant="20" id="924-Dl-N25"/>
+                                    <constraint firstItem="7g6-ri-uiK" firstAttribute="leading" secondItem="xo4-8A-Ejs" secondAttribute="leading" constant="8" id="IfD-C0-3qp"/>
+                                    <constraint firstAttribute="trailing" secondItem="QpQ-ue-82M" secondAttribute="trailing" constant="20" id="Wrp-4A-r3q"/>
+                                    <constraint firstAttribute="trailing" secondItem="oO5-bz-tLW" secondAttribute="trailing" constant="20" id="eD5-x6-6aN"/>
+                                    <constraint firstAttribute="bottom" secondItem="oO5-bz-tLW" secondAttribute="bottom" constant="20" id="h0c-wf-Rge"/>
+                                    <constraint firstItem="QpQ-ue-82M" firstAttribute="top" secondItem="xo4-8A-Ejs" secondAttribute="top" constant="30" id="mGN-bU-70E"/>
                                 </constraints>
                             </view>
                         </subviews>
